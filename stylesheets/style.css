@@ -1,0 +1,137 @@
+/*
+  Gray/Brownish : #1C1C1C
+  greenish :      #AEE852
+  White :         #FFF
+  Pink:           #FF00A0 / FF0074
+  
+  Inspiration:
+    http://www.curbinnovative.com/
+    http://freshout.us/
+    http://theminimgroup.com/
+    http://www.torchbox.com/
+    
+  Gradient I like:
+    -moz-linear-gradient(0% 100% 90deg,#0A40AB, #1A77C9)
+    http://www.westciv.com/tools/gradients/index-moz.html
+    
+    Green Gradient Button:
+    http://hacks.mozilla.org/2009/11/building-beautiful-buttons-with-css-gradients/
+    
+    Pink CSS Chart/Bar Graph on CSS Wizardy
+  	background:-moz-linear-gradient(-90deg, #f43059, #da1b43);
+  	background:-webkit-gradient(linear, left top, left bottom, from(#f43059), to(#da1b43));
+  	-webkit-box-reflect:below 0 -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.25)));
+  	
+  
+*/
+@font-face {
+	font-family: 'DINPro';
+	src: url('fonts/DINPro_Regular.eot');
+	src: local('DINPro-Regular'), local('DINPro-Regular'), url('fonts/DINPro_Regular.woff') format('woff'), url('fonts/DINPro_Regular.otf') format('opentype'), url('fonts/DINPro_Regular.svg#DINPro-Regular') format('svg');
+}
+
+@font-face {
+	font-family: 'DINPro';
+	font-weight: 100;
+	src: url('fonts/dinpro_light.eot');
+	src: local('dinpro-light'), local('dinpro-light'), url('fonts/dinpro_light.woff') format('woff'), url('fonts/dinpro_light.otf') format('opentype'), url('fonts/dinpro_light.svg#dinpro_light') format('svg');
+}
+
+/* [Attributes]
+****************************************/
+body{
+  margin:0; padding:0;
+  color:#555;
+  background:#1C1C1C url('../images/background.png') repeat top left;
+  font:100 14px/1.5 DINPro,Corbel,"Lucida Grande","Lucida Sans Unicode","Lucida Sans","DejaVu Sans","Bitstream Vera Sans","Liberation Sans",Verdana,"Verdana Ref",sans-serif;
+  border-top:#000 15px solid;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+
+a:link, a:active, a:visited{ color:#777; text-decoration:none; }
+a:hover{ color:#E9E9DF; }
+
+h1,h2,h3,h4,h5{
+  color:#FFF; font-weight:500;
+}
+h1{font-size:35px}
+h2{font-size:28px}
+h3{font-size:21px}
+h4{font-size:19px}
+h5{font-size:17px}
+h6{font-size:15px}
+
+.clear{
+  clear:both; display:block;
+  overflow:hidden; visibility:hidden;
+  font-size:0; line-height:0;
+  height:0; width:0;
+  content: ".";
+}
+
+::selection {
+  background: #4284C5; /* Safari */
+  color:#ccc;
+}
+::-moz-selection {
+  background: #4284C5; /* Firefox */
+  color:#ccc;
+}
+/* [Layout]
+****************************************/
+#container{
+  margin:10px auto;
+  width:960px; min-height:200px;
+}
+
+  header{ float:left; }
+    header h1{ margin-left:-25px; padding-left:25px; font-size:18px; letter-spacing:1px; 
+      background:url('../images/color_bloom.png')no-repeat center left;
+      
+      }
+      header h1 span{ color:#67afcb;}
+  nav{ text-transform:uppercase; font-size:13px; }
+    nav ul{ float:right; }
+    nav ul li{ display:inline; margin-right:40px;
+    text-shadow:#000 0 0 3px;
+    -moz-text-shadow:#000 0 0 3px;
+    -webkit-text-shadow:#000 0 0 3px; }
+  #main{ clear:both; padding:20px 0; color:#BBB; }
+    #main h2, #main h2 a{ margin-top:40px; color:#AEE852; }
+    #main p{ margin:0; }
+    .client{ margin:0px auto; }
+      .client_img{
+        float:left; margin:0 1em 1em 0;
+        height:150px; width:225px;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        border-radius:3px;
+      }
+      .client_info{
+        clear:both;
+        margin:10px 0 30px 0; padding:10px;
+        color:#555; background:#CBE4ED;
+        border:2px solid #CBE4ED;
+        border-radius:5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        font-size:1.1em;
+        /*
+        background: -webkit-gradient(linear, left top, left bottom, from(#CBE4ED), to(#A4CEDD));
+        background: -moz-linear-gradient(top,  #CBE4ED,  #A4CEDD);
+        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBE4ED', endColorstr='#A4CEDD');
+        */
+        
+        background: -webkit-gradient(linear, left top, left bottom, from(#CBE4ED), to(#ABD2E0));
+        background: -moz-linear-gradient(top,  #CBE4ED,  #ABD2E0);
+        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBE4ED', endColorstr='#ABD2E0');
+        
+        
+        -webkit-box-shadow:0px 1px 5px #000;
+        -moz-box-shadow:0px 1px 5px #000;
+        box-shadow:0px 1px 5px #000;
+      }
+        .client_title{ padding:0 10px; color:#333; margin-bottom:.5em;}
+        .client_desc{ padding:0 10px; }
+          .worktype{ margin-bottom:.5em; font-size:15px; font-weight:500; }
+  footer{ padding:50px 0; font-size:12px; }

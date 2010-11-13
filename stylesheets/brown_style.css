@@ -1,0 +1,48 @@
+/*
+  Original Colors:
+    Offwhite:    #E9E9DF
+    DirtyOrange: #B85C00
+    SoftBrown:   #92714F
+    SoftGray:    #555
+
+
+*/
+
+/*
+  Soft Colors
+    Blue(header): #36C
+    Brownish:     #201a19
+    Yellow:       #AEB852
+    White:        #BBB
+*/
+
+/* Attributes */
+h1,h2,h3,h4,h5{
+  color:#000; line-height:10px; font-weight:500;
+}
+h1{font-size:35px}
+h2{font-size:28px}
+h3{font-size:21px}
+h4{font-size:19px}
+h5{font-size:17px}
+h6{font-size:15px}
+
+
+/***** Layout *****/
+body{
+  color:#555;
+  background:#FFF;
+  font:14px/1.5 Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+
+header h1{ font-size:40px; color:#36C; }
+#container{
+  margin:0px auto;
+  width:960px; height:200px;
+}
+#main{ padding:20px; background:#201a19; color:#BBB;
+  -webkit-border-radius:10px 0;
+  -moz-border-radius:10px 0;
+  border-radius:10px 0;
+}
+#main h2{ color:#AEB852;}

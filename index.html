@@ -1,9 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tarellel</title>
+  <meta charset=utf-8 />
+  <title>SixMethods</title>
+  <meta name="author" content="Brandon Hicks">
+  <meta name="keywords" content="Brandon Hicks, Web Design, webdesign, design, development, portfolio, farmington, New Mexico, ruby, xhtml, css">
+  <meta name="description" content="SixMethods is the design portfolio of Brandon Hicks. Located in Farmington, NM I help people reach a wider audience in a smart and more efficient way to grow their business.">
+  <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />  
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel-3.0.2.pack.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <style type="text/css"> .clear { zoom: 1; display: block; } </style>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a[rel=basin_health]").fancybox({
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none',
+        'titlePosition' 	: 'over',
+        'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+        return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-  <h1>My GitHub Page</h1>
+  <div id="container">
+    <header>
+      <h1>Six{<span>Methods</span>}</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#work">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="main">
+      <h2>Building you a better experience</h2>
+      <p>Hello World</p><br />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi arcu velit, tincidunt nec, tempor vitae, adipiscing in, augue. Sed id ante. Proin risus arcu, sagittis a, facilisis et, aliquam a, massa. Aliquam erat volutpat. Vestibulum mattis augue euismod nisl. Etiam
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi arcu velit, tincidunt nec, tempor vitae, adipiscing in, augue. Sed id ante. Proin risus arcu, sagittis a, facilisis et, aliquam a, massa. Aliquam erat volutpat. Vestibulum mattis augue euismod nisl. Etiam</p>
+      
+      <h2><a id="work">Work</a></h2>
+      <div class="client">
+        <a rel="basin_health" href="images/clients/bhh_full.png" title="Finished redesign for <a href='http://www.basinhomehealth.com/'>Basin Home Health</a>">
+          <img src="images/clients/bhh_preview2.png" alt="Basin Health Redesign" class="client_img"/>
+        </a>
+        <a rel="basin_health" href="images/clients/bhh_jobs.png" title="Finished redesign for <a href='http://www.basinhomehealth.com/'>Basin Home Health</a>">
+          <img src="images/clients/bhh_jobspreview.png" alt="Basin Health JobBoard" class="client_img"/>
+        </a>
+        <div class="client_info">
+          <h3 class="client_title">Basin Home Health</h3>
+          <div class="client_desc">
+            <div class="worktype">
+              Web Design
+            </div>
+            Application design, development, branding, accessibility<br />
+            A local home healthcare facility, that wanted a better way to display their services to their clients.<br />
+          </div>
+        </div>
+      </div>
+      
+      
+      <h2><a id="about">About</a></h2>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, purus in lobortis pellentesque, tortor quam tincidunt justo, ac consequat mauris leo non tellus. Etiam porta ipsum id est cursus tincidunt. Proin volutpat nisl non purus lacinia vitae blandit magna ullamcorper. Mauris ac felis mauris, a scelerisque velit. Nunc at tristique nunc. Vestibulum vestibulum, ante vitae scelerisque commodo, ipsum ante pretium mi, pharetra elementum sapien metus sit amet dolor. Morbi hendrerit luctus augue quis vulputate. Nulla non augue ut purus scelerisque euismod at vel neque. Duis lobortis faucibus lorem, eu molestie erat imperdiet a. Vivamus vehicula, ante et ultrices malesuada, eros metus porta arcu, non egestas metus ligula vel magna. Pellentesque mauris metus, sodales quis egestas vitae, pulvinar vel orci. Fusce porta adipiscing justo vitae consequat. In hac habitasse platea dictumst. Nam sagittis facilisis justo ac condimentum. Aliquam pretium rutrum mi, ut consequat quam tristique sit amet. Aliquam erat volutpat. Suspendisse convallis, sem id rutrum hendrerit, sem ipsum lacinia tortor, ac tincidunt velit risus quis elit. Sed adipiscing dolor in turpis tempus nec lacinia mauris ornare. Vivamus diam urna, semper nec bibendum posuere, aliquam laoreet arcu.<br />
+      <br />
+      Sed luctus sollicitudin est, eu eleifend risus ornare sed. Nullam iaculis nulla at eros rutrum ac accumsan dolor placerat. Fusce vel libero id neque placerat pellentesque eget ut turpis. Ut in aliquet leo. Nam augue nibh, eleifend in sagittis malesuada, eleifend vel nisl. In sit amet vulputate est. Ut eu sollicitudin lacus. Phasellus accumsan facilisis gravida. Nam dui est, dictum non vestibulum sed, facilisis in sem. Donec porta, lorem a molestie varius, augue libero imperdiet risus, at imperdiet magna diam vitae eros. Nullam dapibus dui elementum dui sagittis vestibulum tempus magna facilisis.
+      
+      <h2><a id="contact">Contact</a></h2>
+      <p>Email: <a href="mailto:&#116;&#097;&#114;&#101;&#108;&#108;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">tarellel&#64;gmail&#046;com</a>
+      <p>Twitter: <a href="http://twitter.com/tarellel" title="My Twitter">http://twitter.com/tarellel</a></p>
+    </div>
+    <footer>
+      Copyright &copy; 2010 Brandon Hicks<br />
+      All Rights Reserved
+    </footer>
+  </div> 
 </body>
 </html>
