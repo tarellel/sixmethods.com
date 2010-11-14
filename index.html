@@ -9,31 +9,14 @@
   <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />  
   <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/jquery.mousewheel-3.0.2.pack.js"></script>
-  <script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
   <!--[if IE]>
+    <link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen" />
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <style type="text/css"> .clear { zoom: 1; display: block; } </style>
   <![endif]-->
   <!--[if lt IE 9]>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js" type="text/javascript"></script>
   <![endif]-->
-  
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("a[rel=basin_health]").fancybox({
-        'transitionIn'		: 'none',
-        'transitionOut'		: 'none',
-        'titlePosition' 	: 'over',
-        'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-        return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-        }
-      });
-    });
-  </script>
 </head>
 <body>
   <div id="container">
@@ -50,17 +33,21 @@
     </nav>
     <div id="main">
       <h2>Building you a better experience</h2>
-      <p>Hello World</p><br />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi arcu velit, tincidunt nec, tempor vitae, adipiscing in, augue. Sed id ante. Proin risus arcu, sagittis a, facilisis et, aliquam a, massa. Aliquam erat volutpat. Vestibulum mattis augue euismod nisl. Etiam
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi arcu velit, tincidunt nec, tempor vitae, adipiscing in, augue. Sed id ante. Proin risus arcu, sagittis a, facilisis et, aliquam a, massa. Aliquam erat volutpat. Vestibulum mattis augue euismod nisl. Etiam</p>
-      
+        <p>Hello World</p><br />
+        <p>Welcome, my name is Brandon Hicks and I do website design and web development. I'm obsessed with helping my clients achieve exceptional results.
+          I dedicate my time in producing professional, innovative, and creative products for a variety of clients.
+          In order to keep my clients and projects up to date with the current technological curve I build websites using HTML5 and CSS3.
+          Between switching from <a href="http://macromates.com/" title="TextMate">TextMate</a>, <a href="http://www.adobe.com/" title="Adobe">Photoshop</a>, and various <a href="http://www.google.com/chrome" title="Google Chrome">web browsers</a> I try to design for a wide audience.
+          And not only do I build websites and web applications, but I also use, maintain, and enjoy them daily.        
+        </p>
       <h2><a id="work">Work</a></h2>
+      <!-- BHH -->
       <div class="client">
         <a rel="basin_health" href="images/clients/bhh_full.png" title="Finished redesign for <a href='http://www.basinhomehealth.com/'>Basin Home Health</a>">
           <img src="images/clients/bhh_preview2.png" alt="Basin Health Redesign" class="client_img"/>
         </a>
-        <a rel="basin_health" href="images/clients/bhh_jobs.png" title="Finished redesign for <a href='http://www.basinhomehealth.com/'>Basin Home Health</a>">
-          <img src="images/clients/bhh_jobspreview.png" alt="Basin Health JobBoard" class="client_img"/>
+        <a rel="basin_health" href="images/clients/bhhjobs_full.png" title="Finished redesign for <a href='http://www.basinhomehealth.com/'>Basin Home Health</a>">
+          <img src="images/clients/bhhjobs_preview.png" alt="Basin Health JobBoard" class="client_img"/>
         </a>
         <div class="client_info">
           <h3 class="client_title">Basin Home Health</h3>
@@ -68,26 +55,104 @@
             <div class="worktype">
               Web Design
             </div>
-            Application design, development, branding, accessibility<br />
+            Application Design, Development, Branding, Accessibility<br />
             A local home healthcare facility, that wanted a better way to display their services to their clients.<br />
+          </div>
+        </div>
+      </div>
+      
+      <!-- GlideCMS-->
+      <div class="client">
+        <a class="glidecms" href="images/clients/glidelogin_full.png" title="Managing your website easier and hassle free">
+          <img src="images/clients/glidelogin_preview.png" alt="GlideCMS Login" class="client_img"/>
+        </a>
+        <a class="glidecms" href="images/clients/glideusers_full.png" title="Managing your website easier and hassle free">
+          <img src="images/clients/glideusers_preview.png" alt="GlideCMS Users" class="client_img"/>
+        </a>
+        <div class="client_info">
+          <h3 class="client_title">GlideCMS</h3>
+          <div class="client_desc">
+            <div class="worktype">
+              Web Design, Web Development
+            </div>
+            Application Design, Development, Branding, Accessibility<br />
+            I worked with a small team of developers to create a Rails based CMS.
+            Which enables users to create a content rich and easy to manage website.
+          </div>
+        </div>
+      </div>
+      
+      <!-- Virboos -->
+      <div class="client">
+        <a id="virboos" href="images/clients/virboos_full.png" title="Distraction free writing - <a href='http://virboos.heroku.com/'>Virboos</a>">
+          <img src="images/clients/virboos_preview.png" alt="Virboos" class="client_img"/>
+        </a>
+        <div class="client_info">
+          <h3 class="client_title">Virboos</h3>
+          <div class="client_desc">
+            <div class="worktype">
+              Web Design, Web Development
+            </div>
+            Application design, Development<br />
+            I developed a simple application for a distraction free writing area. And when your done will output as a plain txt file for storage anywhere you choose.<br />
           </div>
         </div>
       </div>
       
       
       <h2><a id="about">About</a></h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, purus in lobortis pellentesque, tortor quam tincidunt justo, ac consequat mauris leo non tellus. Etiam porta ipsum id est cursus tincidunt. Proin volutpat nisl non purus lacinia vitae blandit magna ullamcorper. Mauris ac felis mauris, a scelerisque velit. Nunc at tristique nunc. Vestibulum vestibulum, ante vitae scelerisque commodo, ipsum ante pretium mi, pharetra elementum sapien metus sit amet dolor. Morbi hendrerit luctus augue quis vulputate. Nulla non augue ut purus scelerisque euismod at vel neque. Duis lobortis faucibus lorem, eu molestie erat imperdiet a. Vivamus vehicula, ante et ultrices malesuada, eros metus porta arcu, non egestas metus ligula vel magna. Pellentesque mauris metus, sodales quis egestas vitae, pulvinar vel orci. Fusce porta adipiscing justo vitae consequat. In hac habitasse platea dictumst. Nam sagittis facilisis justo ac condimentum. Aliquam pretium rutrum mi, ut consequat quam tristique sit amet. Aliquam erat volutpat. Suspendisse convallis, sem id rutrum hendrerit, sem ipsum lacinia tortor, ac tincidunt velit risus quis elit. Sed adipiscing dolor in turpis tempus nec lacinia mauris ornare. Vivamus diam urna, semper nec bibendum posuere, aliquam laoreet arcu.<br />
-      <br />
-      Sed luctus sollicitudin est, eu eleifend risus ornare sed. Nullam iaculis nulla at eros rutrum ac accumsan dolor placerat. Fusce vel libero id neque placerat pellentesque eget ut turpis. Ut in aliquet leo. Nam augue nibh, eleifend in sagittis malesuada, eleifend vel nisl. In sit amet vulputate est. Ut eu sollicitudin lacus. Phasellus accumsan facilisis gravida. Nam dui est, dictum non vestibulum sed, facilisis in sem. Donec porta, lorem a molestie varius, augue libero imperdiet risus, at imperdiet magna diam vitae eros. Nullam dapibus dui elementum dui sagittis vestibulum tempus magna facilisis.
-      
+        <p>
+          I am a 26 year old, trying to find my sweet spot somewhere between designing and developing code. I've traveled a long journey through PHP until I finally found Ruby.
+          I am a happy Mac user and am ambitious about promoting new and growing web standards.
+          I studied Computer Science for a few years, but the overwhelming study of .NET and Visual Basic was disheartening.
+          I now enjoy contributing to the open-source community in any way I possibly can, as well as enjoying the products released my many developers worldwide.
+          I really enjoy spending time with my girlfriend and beautiful our kids, as well as trying to make a career out of my interests.
+        </p>
       <h2><a id="contact">Contact</a></h2>
-      <p>Email: <a href="mailto:&#116;&#097;&#114;&#101;&#108;&#108;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">tarellel&#64;gmail&#046;com</a>
-      <p>Twitter: <a href="http://twitter.com/tarellel" title="My Twitter">http://twitter.com/tarellel</a></p>
+        <p>Email: <a href="mailto:&#116;&#097;&#114;&#101;&#108;&#108;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">tarellel [at] gmail&#046;com</a>
+        <p>Twitter: <a href="http://twitter.com/tarellel" title="My Twitter">http://twitter.com/tarellel</a></p>
     </div>
     <footer>
       Copyright &copy; 2010 Brandon Hicks<br />
       All Rights Reserved
     </footer>
-  </div> 
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel-3.0.2.pack.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        
+       $("a[rel=basin_health]").fancybox({
+         'transitionIn'   : 'none',
+         'transitionOut'  : 'none',
+         'titlePosition'  : 'over',
+         'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) {
+           return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+         }
+        });
+
+        $("a#virboos").fancybox({
+          'transitionIn'    : 'none',
+          'transitionOut'   : 'none',
+          'titlePosition'   : 'over',
+          'titleFormat'     : function(title, currentArray, currentIndex, currentOpts) {
+            return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+          }
+        });
+        
+        $("a.glidecms").fancybox({
+          'transitionIn'    : 'none',
+          'transitionOut'   : 'none',
+          'titlePosition'   : 'over',
+          'titleFormat'     : function(title, currentArray, currentIndex, currentOpts) {
+            return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+          }
+        });
+        
+    });
+  </script>
 </body>
 </html>
