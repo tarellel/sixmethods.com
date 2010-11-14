@@ -1,0 +1,17 @@
+.DS_Store
+.bundle
+.rvmrc
+*.tmproj
+*.swp
+dump.rdb
+db/*.sqlite3
+log/*.log
+tmp/**/*
+Capfile
+config/database.yml
+config/deploy.rb
+config/deploy/*
+public/cache
+public/javascripts/*_packaged.js
+doc/api
+doc/app
