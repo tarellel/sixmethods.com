@@ -82,6 +82,8 @@ h6{font-size:15px}
   background: #4284C5; /* Firefox */
   color:#ccc;
 }
+img::selection {background:transparent;}
+img::-moz-selection {background:transparent;}
 /* [Layout]
 ****************************************/
 #container{
