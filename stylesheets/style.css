@@ -105,13 +105,16 @@ img::-moz-selection {background:transparent;}
   #main{ clear:both; padding:20px 0; color:#BBB; }
     #main h2, #main h2 a{ margin-top:40px; color:#AEE852; }
     #main p{ margin:0; }
-    .client{ margin:0px auto; }
+    .client{
+      margin:0px auto;
+      margin-bottom:4em;
+    }
       .client_img{
         float:left; margin:0 1em 1em 0;
         height:150px; width:225px;
         -moz-border-radius:3px;
         -webkit-border-radius:3px;
-        border-radius:3px;
+        border-radius:4px;
       }
       .client_info{
         clear:both;
