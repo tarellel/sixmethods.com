@@ -144,11 +144,9 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
   <!-- FallBack incase Google CDN is unreachable -->
-  <script type="text/javascript">
-  if (typeof jQuery === 'undefined'){
-    document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
-  }
-  </script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.min.js" type="text/javascript"%3E%3C/script%3E'))</script>
+  <script>!$.ui && document.write(unescape('%3Cscript src="js/jquery-ui.min.js" type="text/javascript"%3E%3C/script%3E'))</script><script>
+  
   <script type="text/javascript" src="js/jquery.mousewheel-3.0.2.pack.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
   <!-- Initialize FancyBox Elements -->
