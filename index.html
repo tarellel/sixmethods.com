@@ -5,204 +5,193 @@
   <!-- Forces IE to use the latest available rendering engine -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>SixMethods</title>
-
-  <!-- Prevent Microsoft Software Interaction on Page Rendering -->
-  <!--[if IE]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
-  <meta name="MSSmartTagsPreventParsing" content="true" />
-
-  <meta name="author" content="Brandon Hicks">
-  <meta name="keywords" content="Brandon Hicks, Web Design, webdesign, design, development, portfolio, farmington, New Mexico, ruby, xhtml, css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="SixMethods is the design portfolio of Brandon Hicks. Located in Farmington, NM I help people reach a wider audience in a smart and more efficient way to grow their business.">
+  <meta name="author" content="Brandon Hicks">
   <meta name="Revisit-After" content="7 Days" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <!--[if IE]>
-    <link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen" />
-  <![endif]-->
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script><![endif]-->
+
+  <!-- Le styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="http://fortawesome.github.com/Font-Awesome/assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/application.css" rel="stylesheet">
+  <link href="assets/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
-    <script> document.execCommand("BackgroundImageCache", false, true); </script>
+    <script src="https://raw.github.com/aFarkas/html5shiv/master/src/html5shiv.js"></script>
   <![endif]-->
-  <script type="text/javascript">
-  (function(){
-    // src: http://www.reinvigorate.net/faqs/
-    // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
-    var d = document, e = d.documentElement, s = d.createElement('style');
-    if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
-      s.textContent = 'body{visibility:hidden}';
-      e.firstChild.appendChild(s);
-      function f(){ s.parentNode && s.parentNode.removeChild(s); }
-      addEventListener('load',f,false);
-      setTimeout(f,2000);
-    }
-  })();
-  </script>
+
+  <!-- Le fav and touch icons -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                 <link rel="shortcut icon" href="assets/ico/favicon.png">-->
 </head>
-<!--[if lt IE 7 ]> <body class="ie6 "> <![endif]-->
-<!--[if IE 7 ]>    <body class="ie7 "> <![endif]-->
-<!--[if IE 8 ]>    <body class="ie8 "> <![endif]-->
-<!--[if (gt IE 8)|!(IE)]><!--> <body> <!--<![endif]-->
-  <div id="container">
-    <header>
-      <h1>Six{<span>Methods</span>}</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#work">Portfolio</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="main">
-      <h2>Building you a better experience</h2>
-        <p>Hello World</p><br />
-        <p>Welcome, my name is Brandon Hicks and I do website design and web development. I'm obsessed with helping my clients achieve exceptional results.
-          I dedicate my time in producing professional, innovative, and creative products for a variety of clients.
-          In order to keep my clients and projects up to date with the current technological curve I build websites using HTML5 and CSS3.
-          Between switching from <a href="http://macromates.com/" title="TextMate">TextMate</a>, <a href="http://www.adobe.com/" title="Adobe">Photoshop</a>, and various <a href="http://www.google.com/chrome" title="Google Chrome">web browsers</a> I try to design for a wide audience.
-          And not only do I build websites and web applications, but I also use, maintain, and enjoy them daily.
-        </p>
-      <h2><a id="work">Work</a></h2>
-      <!-- BHH -->
-      <div class="client">
-        <a rel="basin_health" href="images/clients/bhh_full.png" title="Finished redesign for <a href='http://www.basinhomehealth.com/'>Basin Home Health</a>">
-          <img src="images/clients/bhh_preview2.png" alt="Basin Health Redesign" class="client_img"/>
-        </a>
-        <a rel="basin_health" href="images/clients/bhhjobs_full.png" title="Finished redesign for <a href='http://www.basinhomehealth.com/'>Basin Home Health</a>">
-          <img src="images/clients/bhhjobs_preview.png" alt="Basin Health JobBoard" class="client_img"/>
-        </a>
-        <div class="client_info">
-          <h3 class="client_title">Basin Home Health</h3>
-          <div class="client_desc">
-            <div class="worktype">
-              Web Design
-            </div>
-            Application Design, Development, Branding, Accessibility<br />
-            A local home healthcare facility, that wanted a better way to display their services to their clients.<br />
-          </div>
-        </div>
-      </div>
 
-      <!-- GlideCMS-->
-      <div class="client">
-        <a rel="glidecms" href="images/clients/glidelogin_full.png" title="Managing your website easier and hassle free">
-          <img src="images/clients/glidelogin_preview.png" alt="GlideCMS Login" class="client_img"/>
-        </a>
-        <a rel="glidecms" href="images/clients/glideusers_full.png" title="Managing your website easier and hassle free">
-          <img src="images/clients/glideusers_preview.png" alt="GlideCMS Users" class="client_img"/>
-        </a>
-        <div class="client_info">
-          <h3 class="client_title">GlideCMS</h3>
-          <div class="client_desc">
-            <div class="worktype">
-              Web Design, Web Development
-            </div>
-            Application Design, Development<br />
-            I worked with a small team of developers to create a Rails based CMS.
-            Which enables users to create a content rich and easy to manage website.
-          </div>
-        </div>
-      </div>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
 
-      <!-- Virboos -->
-      <div class="client">
-        <a id="virboos" href="images/clients/virboos_full.png" title="Distraction free writing - <a href='http://virboos.heroku.com/'>Virboos</a>">
-          <img src="images/clients/virboos_preview.png" alt="Virboos" class="client_img"/>
-        </a>
-        <div class="client_info">
-          <h3 class="client_title">Virboos</h3>
-          <div class="client_desc">
-            <div class="worktype">
-              Web Design, Web Development
-            </div>
-            Application design, Development<br />
-            I developed a simple application for a distraction free writing area. And when your done will output as a plain txt file for storage anywhere you choose.<br />
-          </div>
-        </div>
-      </div>
-
-      <h2><a id="projects">Projects</a></h2>
-        <p>
-          <ul id="project_list">
+  <!-- Navbar
+  ================================================== -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="index.html">SixMethods</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav pull-right">
             <li>
-              <a href="https://github.com/tarellel/jquery.Storage" class="projectlink">jQuery.Storage</a><br />
-                A jQuery plugin to make localStorage easy and manageable to use. It also contains a cookie fallback for browsers lacking localStorage.
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
-        </p>
-
-      <h2><a id="about">About</a></h2>
-        <p>
-          I am a 26 year old, trying to find my sweet spot somewhere between designing and developing code. I've traveled a long journey through PHP until I finally found Ruby.
-          I am a happy Mac user and am ambitious about promoting new and growing web standards.
-          I studied Computer Science for a few years, but the overwhelming study of .NET and Visual Basic was disheartening.
-          I now enjoy contributing to the open-source community in any way I possibly can, as well as enjoying the products released my many developers worldwide.
-          I really enjoy spending time with my girlfriend and beautiful our kids, as well as trying to make a career out of my interests.
-        </p>
-      <h2><a id="contact">Contact</a></h2>
-        <p>Email: <a href="mailto:&#116;&#097;&#114;&#101;&#108;&#108;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">tarellel [at] gmail&#046;com</a>
-        <p>Twitter: <a href="http://twitter.com/tarellel" title="My Twitter">http://twitter.com/tarellel</a></p>
+        </div>
+      </div>
     </div>
-    <footer>
-      Copyright &copy; 2010 Brandon Hicks<br />
-      All Rights Reserved
-    </footer>
   </div>
-  <!--- Put JavaScript at bottom for faster page loading -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
-  <!-- FallBack incase Google CDN is unreachable -->
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.min.js" type="text/javascript"%3E%3C/script%3E'))</script>
-  <script>!$.ui && document.write(unescape('%3Cscript src="js/jquery-ui.min.js" type="text/javascript"%3E%3C/script%3E'))</script>
 
-  <script type="text/javascript" src="js/jquery.mousewheel-3.0.2.pack.js"></script>
-  <script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
-  <!-- Initialize FancyBox Elements -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-       $("a[rel=basin_health]").fancybox({
-         'transitionIn'   : 'none',
-         'transitionOut'  : 'none',
-         'titlePosition'  : 'over',
-         'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) {
-           return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
-         }
-        });
+  <div class="intro-box">
+    <img src="images/blueboats.png">
+  </div>
 
-        $("a#virboos").fancybox({
-          'transitionIn'    : 'none',
-          'transitionOut'   : 'none',
-          'titlePosition'   : 'over',
-          'titleFormat'     : function(title, currentArray, currentIndex, currentOpts) {
-            return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
-          }
-        });
 
-        $("a[rel=glidecms]").fancybox({
-          'transitionIn'    : 'none',
-          'transitionOut'   : 'none',
-          'titlePosition'   : 'over',
-          'titleFormat'     : function(title, currentArray, currentIndex, currentOpts) {
-            return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
-          }
-        });
 
-    });
-  </script>
-  <script>
-     var _gaq = [['_setAccount', 'UA-83105-4'], ['_trackPageview']];
-     (function(d, t) {
-      var g = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      g.async = true;
-      g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g, s);
-     })(document, 'script');
-    </script>
+
+
+<div class="jumbotron masthead">
+  <div class="container">
+    <h2>Building you a better experience</h2>
+    <p>
+      Welcome, my name is Brandon Hicks and I do website design and web development.
+      I'm obsessed with helping my clients achieve exceptional results.
+      I dedicate my time in producing professional, innovative, and creative products for a variety of clients.
+      In order to keep my clients and projects up to date with the current technological curve I build websites using HTML5 and CSS3.
+      Between switching from TextMate, Photoshop, and various web browsers I try to design for a wide audience.
+      And not only do I build websites and web applications, but I also use, maintain, and enjoy them daily.
+    </p>
+  </div>
+</div>
+
+<div class="portfolio" id="portfolio">
+  <div class="container">
+    <h2>Work</h2>
+    <!-- Basin Home Health -->
+    <div class="row">
+      <div class="span3">
+        <a id="fancybox-bhh" href="javascript:;">
+          <img src="images/work/previews/bhh/preview2.png" alt="" class="client_images">
+        </a>
+      </div>
+      <div class="span8">
+        <p class="work-title">Basin Home Health</p>
+        <em>Application Design, Development, Branding, Accessibility</em>
+        <p>A local home healthcare facility, that wanted a better way to display their services to their clients.</p>
+      </div>
+    </div>
+
+    <!-- Glide CMS -->
+    <div class="row">
+      <div class="span3">
+        <a id="fancybox-glide" href="javascript:;">
+          <img src="images/work/previews/glide/login_preview.png" alt="" class="client_images">
+        </a>
+      </div>
+      <div class="span8">
+        <p class="work-title">Glide CMS</p>
+        <em>Application Design, Development</em>
+        <p>I worked with a small team of developers to create a Rails based CMS. Which enables users to create a content rich and easy to manage website.</p>
+      </div>
+    </div>
+
+    <!-- Virboos -->
+    <div class="row">
+      <div class="span3">
+        <a id="fancybox-virboos" href="javascript:;">
+          <img src="images/work/previews/virboos/preview.png" alt="" class="client_images">
+        </a>
+      </div>
+      <div class="span8">
+        <p class="work-title">Virboos</p>
+        <em>Application design, Development</em>
+        <p>I developed a simple application for a distraction free writing area. And when your done will output as a plain txt file for storage anywhere you choose.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="projects" id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <ul class="icons">
+      <li><i class="icon-wrench"></i> <a href="">jQuery.Storage</a> <br>
+        A jQuery plugin to make localStorage easy and manageable to use. It also contains a cookie fallback for browsers lacking localStorage.
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="about" id="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I am a twenties something Web Developer, trying to find my sweet spot somewhere between designing and developing code.
+      I've traveled a long journey through PHP until I finally found Ruby.
+      I am a happy Mac user and am ambitious about promoting new and growing web standards.
+      And even though I am an Apple "fan-boy" when it comes to using macs I highly dislike iOS and thing Android is one of the greatest contributions driven by Google.
+      I studied Computer Science for a few years, but the overwhelming study of .NET, Visual Basic, and forced learning of Microsoft garble was disheartening.
+      I now enjoy contributing to the open-source community in any way I possibly can, as well as enjoying the products released by many developers worldwide.
+      I really enjoy spending time with my fiance and beautiful our children, as well as trying to make a career out of my interests.
+    </p>
+  </div>
+</div>
+
+
+
+<div class="contact" id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <ul class="icons">
+          <li><i class="icon-envelope"></i> Email: <a href="mailto:&#116;&#097;&#114;&#101;&#108;&#108;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">tarellel [at] gmail&#046;com</a></li>
+          <li><i class="icon-twitter"></i> Twitter: <a href="https://twitter.com/tarellel" target="_blank">@tarellel</a></li>
+          <li><i class="icon-linkedin"></i> LinkedIn: <a href="http://www.linkedin.com/in/tarellel">Tarellel</a></li>
+          <li><i class="icon-facebook"></i> Facebook: <a href="http://facebook.com/tarellel">Tarellel</a></li>
+        </ul>
+  </div>
+</div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy; Brandon Hicks</p>
+        <p>All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+    <script src="assets/js/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="assets/js/application.js"></script>
 </body>
 </html>

@@ -1,9 +1,0 @@
-Fonts From: RosePad.com
-
-usage: (stylesheet - http://www.rosepad.com/wp-content/themes/rose.x/style.css)
-
-@font-face {
-	font-family: 'DINPro';
-	src: url('fonts/DINPro_Regular.eot');
-	src: local('DINPro-Regular'), local('DINPro-Regular'), url('fonts/DINPro_Regular.woff') format('woff'), url('fonts/DINPro_Regular.otf') format('opentype'), url('fonts/DINPro_Regular.svg#DINPro-Regular') format('svg');
-}
