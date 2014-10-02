@@ -4,56 +4,42 @@
   <meta charset="utf-8">
   <!-- Forces IE to use the latest available rendering engine -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>SixMethods</title>
+  <title>SixMethods | Web Development in the Four Corners </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="SixMethods is the design portfolio of Brandon Hicks. Located in Farmington, NM I help people reach a wider audience in a smart and more efficient way to grow their business.">
+  <meta name="keywords" content="farmington, new mexico, development, rails, ruby, app, software, application, Brandon Hicks, Tarellel">
   <meta name="author" content="Brandon Hicks">
-  <meta name="Revisit-After" content="7 Days" />
-  <meta name="robots" content="index, follow" />
+  <meta name="Revisit-After" content="7 Days">
+  <meta name="robots" content="index, follow">
 
-  <!-- Le styles -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="http://fortawesome.github.com/Font-Awesome/assets/css/font-awesome.css" rel="stylesheet">
   <link href="assets/css/application.css" rel="stylesheet">
-  <link href="assets/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <script src="http:////cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <!--[if lt IE 9]>
-    <script src="https://raw.github.com/aFarkas/html5shiv/master/src/html5shiv.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
   <![endif]-->
-
-  <!-- Le fav and touch icons -->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                 <link rel="shortcut icon" href="assets/ico/favicon.png">-->
 </head>
 
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-  <!-- Navbar
-  ================================================== -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="brand" href="index.html">SixMethods</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav pull-right">
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">SixMethods</a>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
+              <a href="http://theworkaround.com">Blog</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -61,30 +47,19 @@
             <li>
               <a href="#contact">Contact</a>
             </li>
-          </ul>
-        </div>
+        </ul>
       </div>
     </div>
-  </div>
-
-  <div class="intro-box">
-    <img src="images/blueboats.png">
-  </div>
-
-
-
+  </nav>
 
 
 <div class="jumbotron masthead">
-  <div class="container">
+  <div class="container text-center">
     <h2>Building you a better experience</h2>
     <p>
-      Welcome, my name is Brandon Hicks and I do website design and web development.
-      I'm obsessed with helping my clients achieve exceptional results.
-      I dedicate my time in producing professional, innovative, and creative products for a variety of clients.
-      In order to keep my clients and projects up to date with the current technological curve I build websites using HTML5 and CSS3.
-      Between switching from TextMate, Photoshop, and various web browsers I try to design for a wide audience.
-      And not only do I build websites and web applications, but I also use, maintain, and enjoy them daily.
+      I'm a full service software developer that specializes in Web Development.
+      I am dedicated to providing a professional, innovative, and creative set of solutions for your business and clients.
+      I have a passion for web design and desire to give you the highest quality solution for you and your clients.
     </p>
   </div>
 </div>
@@ -94,13 +69,13 @@
     <h2>Work</h2>
     <!-- Basin Home Health -->
     <div class="row">
-      <div class="span3">
-        <a id="fancybox-bhh" href="javascript:;">
+      <div class="col-md-4">
+        <a href="#">
           <img src="images/work/previews/bhh/preview2.png" alt="" class="client_images">
         </a>
       </div>
-      <div class="span8">
-        <p class="work-title">Basin Home Health</p>
+      <div class="col-md-8">
+        <h5 class="work-title">Basin Home Health</h5>
         <em>Application Design, Development, Branding, Accessibility</em>
         <p>A local home healthcare facility, that wanted a better way to display their services to their clients.</p>
       </div>
@@ -108,13 +83,13 @@
 
     <!-- Glide CMS -->
     <div class="row">
-      <div class="span3">
-        <a id="fancybox-glide" href="javascript:;">
+      <div class="col-md-4">
+        <a href="#">
           <img src="images/work/previews/glide/login_preview.png" alt="" class="client_images">
         </a>
       </div>
-      <div class="span8">
-        <p class="work-title">Glide CMS</p>
+      <div class="col-md-8">
+        <h5 class="work-title">Glide CMS</h5>
         <em>Application Design, Development</em>
         <p>I worked with a small team of developers to create a Rails based CMS. Which enables users to create a content rich and easy to manage website.</p>
       </div>
@@ -122,27 +97,37 @@
 
     <!-- Virboos -->
     <div class="row">
-      <div class="span3">
-        <a id="fancybox-virboos" href="javascript:;">
+      <div class="col-md-4">
+        <a href="#">
           <img src="images/work/previews/virboos/preview.png" alt="" class="client_images">
         </a>
       </div>
-      <div class="span8">
-        <p class="work-title">Virboos</p>
+      <div class="col-md-8">
+        <h5 class="work-title">Virboos</h5>
         <em>Application design, Development</em>
         <p>I developed a simple application for a distraction free writing area. And when your done will output as a plain txt file for storage anywhere you choose.</p>
       </div>
     </div>
-
   </div>
 </div>
+
 
 <div class="projects" id="projects">
   <div class="container">
     <h2>Projects</h2>
     <ul class="icons">
-      <li><i class="icon-wrench"></i> <a href="">jQuery.Storage</a> <br>
+      <li>
+        <i class="fa fa-wrench"></i> <a href="https://github.com/tarellel/debian-rails">debian-rails</a>
+        <p>
+          A Vagrant/Ansible Provision using Debian as it's VM image to do a basic setup for a Rails Server.
+          It comes with various required systems for a basic rails setup, including but not limited to: postgresql, redis, nodejs, nginx, Phusion Passenger, and much more.
+        </p>
+      </li>
+
+      <li><i class="fa fa-wrench"></i> <a href="https://github.com/tarellel/jquery.Storage">jQuery.Storage</a>
+      <p>
         A jQuery plugin to make localStorage easy and manageable to use. It also contains a cookie fallback for browsers lacking localStorage.
+      </p>
       </li>
     </ul>
   </div>
@@ -153,57 +138,52 @@
   <div class="container">
     <h2>About</h2>
     <p>
-      I am a twenties something Web Developer, trying to find my sweet spot somewhere between designing and developing code.
+      I am a Web Developer, trying to find my sweet spot somewhere between designing and developing applications.
       I've traveled a long journey through PHP until I finally found Ruby.
-      I am a happy Mac user and am ambitious about promoting new and growing web standards.
-      And even though I am an Apple "fan-boy" when it comes to using macs I highly dislike iOS and thing Android is one of the greatest contributions driven by Google.
-      I studied Computer Science for a few years, but the overwhelming study of .NET, Visual Basic, and forced learning of Microsoft garble was disheartening.
+      I am a happy Mac user, as well as ambitious about promoting new and growing web standards.
+      I studied Computer Science for a few years, but the overwhelming study of .NET, Visual Basic, and forced learning of Microsoft garble was disheartening, but this doesn't mean I have given up on school.
       I now enjoy contributing to the open-source community in any way I possibly can, as well as enjoying the products released by many developers worldwide.
-      I really enjoy spending time with my fiance and beautiful our children, as well as trying to make a career out of my interests.
+      I really enjoy spending time with my wife and our beautiful children, as well as trying to make a career out of my interests.
+      In the process of building a career, I am also trying to make the most that I can for my childrens futures.
     </p>
   </div>
 </div>
 
 
 
-<div class="contact" id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <ul class="icons">
-          <li><i class="icon-envelope"></i> Email: <a href="mailto:&#116;&#097;&#114;&#101;&#108;&#108;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">tarellel [at] gmail&#046;com</a></li>
-          <li><i class="icon-twitter"></i> Twitter: <a href="https://twitter.com/tarellel" target="_blank">@tarellel</a></li>
-          <li><i class="icon-linkedin"></i> LinkedIn: <a href="http://www.linkedin.com/in/tarellel">Tarellel</a></li>
-          <li><i class="icon-facebook"></i> Facebook: <a href="http://facebook.com/tarellel">Tarellel</a></li>
-        </ul>
+  <div class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul class="icons">
+            <li><i class="fa fa-envelope"></i> Email: <a href="mailto:&#116;&#097;&#114;&#101;&#108;&#108;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">tarellel [at] gmail&#046;com</a></li>
+            <li><i class="fa fa-github"></i> Github: <a href="https://github.com/tarellel">Tarellel</a></li>
+            <li><i class="fa fa-twitter"></i> Twitter: <a href="https://twitter.com/tarellel" target="_blank">@tarellel</a></li>
+            <li><i class="fa fa-linkedin"></i> LinkedIn: <a href="http://www.linkedin.com/in/tarellel">Tarellel</a></li>
+            <li><i class="fa fa-facebook"></i> Facebook: <a href="http://facebook.com/tarellel">Tarellel</a></li>
+          </ul>
+    </div>
   </div>
-</div>
+  <footer class="footer">
+    <div class="text-center">
+      <p>Copyright &copy; Brandon Hicks</p>
+      <p>All Rights Reserved</p>
+    </div>
+  </footer>
 
+  <script src="assets/js/jquery.js"></script>
+  <!--<script src="assets/js/bootstrap.min.js"></script>-->
+  <script src="assets/js/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="assets/js/application.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38984859-1']);
+    _gaq.push(['_trackPageview']);
 
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <p>Copyright &copy; Brandon Hicks</p>
-        <p>All Rights Reserved</p>
-        <p>Our <a href="https://secure.flickr.com/photos/bubble-pop/8390909963/in/explore-2013-01-18">header image </a> was taken by <a href="https://secure.flickr.com/photos/bubble-pop/">toey</p>
-      </div>
-    </footer>
-
-    <script src="assets/js/jquery.js"></script>
-    <!--<script src="assets/js/bootstrap.min.js"></script>-->
-    <script src="assets/js/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="assets/js/application.js"></script>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-38984859-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </body>
 </html>

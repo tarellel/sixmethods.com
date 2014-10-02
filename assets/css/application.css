@@ -1,95 +1,47 @@
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);*/
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic); /* very clean sans */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+
+@import url('bootstrap.min.css');
+
+
+
 body {
-  position: relative;
-  padding-top: 40px;
-
-  font-size:13px;
-
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  /*background:#1C1C1C url('../img/blackorchid.png') repeat top left;*/
-  /*background:#1C1C1C url('../img/bgstatic.png') repeat top left;*/
-
-
-  /*color:#BBB;*/
-  color:#333;
-}
-
-a:link, a:active, a:visited{ color:#39ade6; text-decoration:none; }
-a:hover{ color:#4b8dad; }
-
-
-h1, h2, h3, h4, h5{
-  font-weight:normal;
-  /*color: #AEE852;*/
-}
-
-h1, h2, h3, h4, h5{
-  color: rgb(100, 100, 100);
-  font-weight: 300;
-  font-style: italic;
-  font-size: 27px;
-  padding-bottom: 0px;
-  display: inline-block;
+  /*padding-top: 60px;*/
+  padding-top: 50px;
+  font:400 16px/1.5 'Source Sans Pro', sans-serif;
+  color: #73879C;
+  background-color:#f2f5f7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  font-smooth: always;
+  zoom:1;
 }
 
 
-
-
-::selection {
-  background: #4284C5;
-  color:#ccc;
-}
-::-moz-selection {
-  background: #4284C5;
-  color:#ccc;
+h1, h2, h3, h4, h5, h6, label, legend{
+  font-family: 'Lato', Helvetica, Arial, sans-serif;;
+  color: #506A85;
+  font-weight:600;
 }
 
+.jumbotron p{
+  /*font-weight:300;*/
+  font:16px/1.5 'Source Sans Pro', sans-serif;
+}
 
-/******************************
-* Elements
-******************************/
+ul.icons{
+  margin:0; padding:0;
+}
+ul.icons li{
+  margin:0; padding:0;
+  list-style-type: none;
+}
 
 
-.portfolio .row{
-  margin-bottom:2.5em;
-  padding-bottom:2em;
+.portfolio .row {
+  padding:1.5em 0;
   border-bottom: 1px solid #d9d9d9;
 }
 
-.client_images{
-  height:150px; width:225px;
-  border:1px solid #EEE;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  -khtml-border-radius:3px;
-  border-radius:3px;
-}
-
-
-.navbar-inverse .brand {
-    color: #fff;
-}
-
-.intro-box{
-  margin-bottom:1em;
-}
-
-
-.work-title{
-  font-size:1.5em;
-}
-.work-type{
-  font-size:1em;
-}
-
-
-/* +--- Contact ---+ */
-.social-box ul { font-size:1.75em; margin-left:0; }
-.social-box ul li { margin-left:0; padding:0; margin-right:.75em; list-style-type:none; display:inline; }
-
-
-footer, .footer{
-  margin-top:2.5em; margin-bottom:2em;
-  font-size:.95em;
-}
+/*nav, .navbar, .navbar-default { border:0; }*/
