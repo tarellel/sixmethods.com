@@ -1,16 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic); /* very clean sans */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+/*===================================================================================*/
+/*  Attributes
+/*===================================================================================*/
 
-@import url('bootstrap.min.css');
+/* SoftTeal: #4DD0E1; */
 
-
-
-body {
-  /*padding-top: 60px;*/
+body{
   padding-top: 50px;
-  font:400 16px/1.5 'Source Sans Pro', sans-serif;
+  /*font:500 17px/1.5 'Open Sans',san-serif;*/
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background: #fff;
   color: #73879C;
-  background-color:#f2f5f7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
@@ -18,30 +18,156 @@ body {
   zoom:1;
 }
 
-
-h1, h2, h3, h4, h5, h6, label, legend{
-  font-family: 'Lato', Helvetica, Arial, sans-serif;;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  /*font-weight: 700;*/
+  font-weight: 700;
   color: #506A85;
-  font-weight:600;
-}
-
-.jumbotron p{
-  /*font-weight:300;*/
-  font:16px/1.5 'Source Sans Pro', sans-serif;
-}
-
-ul.icons{
-  margin:0; padding:0;
-}
-ul.icons li{
-  margin:0; padding:0;
-  list-style-type: none;
 }
 
 
-.portfolio .row {
-  padding:1.5em 0;
-  border-bottom: 1px solid #d9d9d9;
+/*===================================================================================*/
+/*  Layout
+/*===================================================================================*/
+
+header{
+  /*margin-bottom: 2.5em;*/
+  margin:2em 0;
+}
+  header h1{
+    text-transform: uppercase;
+  }
+
+/* ===== Navigation ===== */
+
+nav{
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+}
+nav, .navbar-default{
+  background-color: #fff;
 }
 
-/*nav, .navbar, .navbar-default { border:0; }*/
+.navbar-default .navbar-brand{
+  color: #4DD0E1;
+}
+.navbar-default .navbar-brand:hover{
+  color: #73879C;
+}
+
+
+a.navbar-brand{
+  color: #4DD0E1;
+  /*font: 18px/1.5 "Dosis","Times New Roman",Times,serif;*/
+  font-size:21px;
+  font-weight: bold;
+}
+
+
+section{
+  margin: 5em 0;
+}
+
+/* ===== Jumbotron ===== */
+.jumbotron{
+  padding: 1em 0;
+}
+.bg{
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-color: #4DD0E1;
+  background: url('headers/sparkleme.jpeg') no-repeat center center;
+  background-size: cover;
+  background-position: 0% 0;
+  color: #fff;
+}
+  .jumbotron h1{
+    padding: 0.5em;
+    display: block;
+    /*margin: 0 auto;*/
+    font-family: "Dosis", "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-size: 2.75em;
+    text-align: left;
+    width: 400px;
+    text-transform: uppercase;
+    /*background: rgba(42, 173, 217, 0.15);*/
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+@media (max-width: 768px) {
+  .jumbotron h1{
+    width:200px;
+    font-size: 1.5em;
+  }
+}
+
+
+
+/* ===== Services ===== */
+.services .icon{
+  position: relative;
+  height: 150px; width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  background: #4DD0E1;
+  line-height: 150px;
+  /*font-size: 35px;*/
+  font-size: 50px;
+  color: #fff;
+
+  border-radius: 50%;
+}
+
+.services h3{
+  text-transform: uppercase;
+}
+
+/* ===== Latest Works ===== */
+.clients{
+
+}
+
+.clients .project{
+  display: block;
+  margin-bottom: 2em;
+  padding: 1.5em;
+  /*background: #F7F7F7;*/
+  background: rgba(247, 247, 247, .45);
+  border-radius: 10px;
+}
+
+/* ===== Projects ===== */
+.projects .project{
+  margin-bottom: 1.85em;
+}
+
+
+/* ===== Footer ===== */
+footer{
+  margin-top: 2.5em;
+  padding:1em 0;
+  font-size: 85%;
+  background-color: #4DD0E1;
+  color: #fff;
+  width:  100%;
+  border-top:5px solid #F2F5F7;
+}
+  footer a { color: #fff; }
+
+  .social-box{
+    margin-bottom: 1em;
+  }
+
+  ul.social-nav{
+    margin: 0; padding: 0;
+    /*font-size: 1.25em;*/
+    font-size: 1.5em;
+    list-style-type: none;
+  }
+    .social-nav li{
+      display: inline;
+      margin-right: .75em;
+    }
