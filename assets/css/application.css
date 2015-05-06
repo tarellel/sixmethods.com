@@ -41,6 +41,7 @@ nav{
   -webkit-box-shadow: 0 0 5px #888;
   box-shadow: 0 0 5px #888;
 }
+
 nav, .navbar-default{
   background-color: #fff;
 }
@@ -143,12 +144,13 @@ section{
 
 /* ===== Footer ===== */
 footer{
+  display: block;
   margin-top: 2.5em;
   padding:1em 0;
   font-size: 85%;
   background-color: #4DD0E1;
   color: #fff;
-  width:  100%;
+  width: 100%;
   border-top:5px solid #F2F5F7;
 }
   footer a { color: #fff; }
