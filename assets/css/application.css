@@ -269,9 +269,7 @@ h1 { font-weight: 400 }
   align-items: center;
 
   margin: 0 auto;
-  /*width: 100%;
-  width: auto;*/
-  width: 90%;
+  width: 100%;
 }
 
 .clients .project {
