@@ -12,6 +12,14 @@
 body {
   color: #4F5D6C;
   font: 400 18px/1.5 "Open Sans", Arial, Helvetica, sans-serif;
+
+  /* Antialias the font  for smooth text rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  font-smooth: always;
 }
 
 h1, h2, h3, h4, h5,
