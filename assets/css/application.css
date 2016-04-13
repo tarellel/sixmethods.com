@@ -231,7 +231,7 @@ h1 { font-weight: 400 }
 
 #work {
   height: 100%;
-  width: auto;
+  width: 100% !important;
 }
 
 .work h1 { margin-bottom: 0 }
@@ -269,16 +269,11 @@ h1 { font-weight: 400 }
   align-items: center;
 
   margin: 0 auto;
-  width: 90%;
+  width: 100% !important;
 }
 
 .clients .project {
-  /*flex: 250 auto;*/
-  /*display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;*/
-  margin:0 auto;
-  margin-bottom: 1em;
+  margin:0 .4em 1em .4em;
   position: relative;
   transition: ease 1s;
   width: 250px;
