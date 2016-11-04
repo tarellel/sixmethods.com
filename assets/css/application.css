@@ -64,7 +64,8 @@ h3 {
 
 .teal-bg {
   background: #7adbeb;
-  color: rgb(22, 170, 194);
+  /* color: rgb(22, 170, 194); */
+  color: #fff;
 }
 
 h1 { font-weight: 400 }
@@ -379,9 +380,11 @@ h1 { font-weight: 400 }
 
 footer {
   background-color: #7adbeb;
-  color: rgb(22, 170, 194);
+  /*color: rgb(22, 170, 194);*/
+  color: #fff;
   display: block;
-  font-size: .85em;
+  font-size: .8em;
   margin: 0;
   padding: 2.5em 0;
+  font-weight: 600;
 }
