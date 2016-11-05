@@ -44,7 +44,8 @@ section { padding: 2.5em }
 }
 .gray-bg,
 .teal-bg {
-  background: #e9edf2;
+  /*background: #e9edf2;*/
+  background: #f0f4f5;
   margin: 2em 0;
   padding: 2.5em;
 }
